@@ -1,16 +1,14 @@
 #include <stdio.h>
 int main(void)
 {
-	int a, b, sum, sub;
+	int year = 0;
+	int month = 0;
+	int day = 0;
 
-	printf("두 정수를 입력하세요 : ");
-	scanf("%d%d", &a, &b);
+	printf("생년월일을 입력하세요(yy/mm/dd) : ");
+	scanf("%d%d%d", &year, &month, &day);
 
-    sum = a + b;		
-    sub = a - b;
-
-	printf("합 : %d + %d = %d\n", a, b, sum);
-	printf("차 : %d - %d = %d\n", a, b, sub);
+	printf("당신은 %d년 %d월 %d일에 태어났습니다. \n", year, month, day);
 
 	return 0;	
 }
