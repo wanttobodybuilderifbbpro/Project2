@@ -1,15 +1,16 @@
 #include <stdio.h>
 int main(void)
 {
-	for (int i = 2; i <= 9; i++)
-	{
-		for (int j = 1; j <= 9; j++)
-		{
-			printf("%d * %d = %d \n", i, j, (i * j));
-		}
-		printf("\n");
-	}
+	int a, b, sum, sub;
 
-	return 0;
-	
+	printf("두 정수를 입력하세요 : ");
+	scanf("%d%d", &a, &b);
+
+    sum = a + b;		
+    sub = a - b;
+
+	printf("합 : %d + %d = %d\n", a, b, sum);
+	printf("차 : %d - %d = %d\n", a, b, sub);
+
+	return 0;	
 }
