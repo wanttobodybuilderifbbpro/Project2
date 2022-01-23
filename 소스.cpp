@@ -1,14 +1,34 @@
 #include <stdio.h>
+
 int main(void)
 {
-	int year = 0;
-	int month = 0;
-	int day = 0;
+	int a, b, c;
+	int result1, result2;
 
-	printf("생년월일을 입력하세요(yy/mm/dd) : ");
-	scanf("%d%d%d", &year, &month, &day);
+	printf("input a : ");
+	scanf("%d", &a);
 
-	printf("당신은 %d년 %d월 %d일에 태어났습니다. \n", year, month, day);
+	printf("input b : ");
+	scanf("%d", &b);
 
-	return 0;	
+	printf("input c : ");
+	scanf("%d", &c);
+
+	if (a > b) {
+		result1 = a;
+	}
+	else {
+		result1 = b;
+	}
+
+	if (result1 > c) {
+		result2 = result1;
+	}
+	else {
+		result2 = c;
+	}
+
+	printf("%d \n", result2);
+
+	return 0;
 }
